@@ -2,18 +2,38 @@
   "main": "node_modules/expo/AppEntry.js",
   "scripts": {
     "start": "expo start",
+    "start:prod": "expo start --no-dev --tunnel",
+    "start:dev": "expo start --tunnel",
+    "start:pepe": "--minify",
+    "buildApk": "expo build:android",
     "android": "expo start --android",
     "ios": "expo start --ios",
     "web": "expo start --web",
     "eject": "expo eject"
   },
   "dependencies": {
+    "@react-native-async-storage/async-storage": "^1.15.6",
+    "@react-native-community/datetimepicker": "^3.5.2",
     "expo": "~42.0.1",
-    "expo-status-bar": "~1.0.4",
+    "expo-cli": "^4.10.1",
+    "expo-constants": "^11.0.1",
+    "expo-status-bar": "^1.0.4",
+    "intl": "^1.2.5",
+    "lodash": "^4.17.21",
+    "native-base": "^3.1.0",
+    "prop-types": "^15.7.2",
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "react-native": "https://github.com/expo/react-native/archive/sdk-42.0.0.tar.gz",
-    "react-native-web": "~0.13.12"
+    "react-native-elements": "^3.4.2",
+    "react-native-svg": "^12.1.1",
+    "react-native-web": "^0.13.18",
+    "react-stately": "^3.8.0",
+    "sentry-expo": "^4.0.0",
+    "sprintf-js": "^1.1.2",
+    "styled-components": "^5.3.0",
+    "styled-system": "^5.1.5",
+    "use-state-if-mounted": "^1.0.4"
   },
   "devDependencies": {
     "@babel/core": "^7.9.0"
